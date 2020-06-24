@@ -1,3 +1,5 @@
+package com.suchaos.dynamic.proxy;
+
 /**
  * Thinking in java page 337
  * 展示代理结构的简单示例
@@ -49,13 +51,13 @@ class SimpleProxy implements Interface {
 
     @Override
     public void doSomething() {
-        System.out.println("SimpleProxy doSomething");
+        System.out.println("com.suchaos.dynamic.proxy.SimpleProxy doSomething");
         this.proxied.doSomething();
     }
 
     @Override
     public void somethingElse(String args) {
-        System.out.println("SimpleProxy somethingElse " + args);
+        System.out.println("com.suchaos.dynamic.proxy.SimpleProxy somethingElse " + args);
         this.proxied.somethingElse(args);
     }
 }
